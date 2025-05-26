@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  margin: 2rem 0;
+  font-family: "Overpass", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(217, 54%, 11%);
+}
+.container{
+ width: 300px;
+ background-color:hsl(216, 50%, 16%) ;
+ border-radius: 1em;
+ padding: 1rem;
+}
+.image-container{
+  position: relative;
+  cursor: pointer;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: hsl(178, 100%, 50%,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: .65em;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+.view-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+.image{
+  width: 100%;
+  object-fit: cover;
+  border-radius: .65em;
+}
+.image:hover{
+  background-color: hsl(178, 100%, 50%);
+}
+h3{
+  margin: 1rem 0;
+  color: hsl(0, 0%, 100%);
+}
+h3:hover{
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
+}
+.para{
+  color: hsl(215, 51%, 70%);
+  font-size: 18px;
+}
+.nft-info{
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nft-info .left,
+.nft-info .right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+.nft-info .left {
+  color: hsl(178, 100%, 50%);
+}
+
+.nft-info .right {
+  color: hsl(215, 51%, 70%);
+}
+.line{
+  border: 1px solid hsl(215, 51%, 70%);;
+}
+.user{
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+}
+.user .user-image{
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.user p{
+  padding-left: .75em;
+  color: hsl(215, 51%, 70%);
+}
+.user p span{
+  color: white;
+  cursor: pointer;
+}
+.user p span:hover{
+color: hsl(178, 100%, 50%);
+}
